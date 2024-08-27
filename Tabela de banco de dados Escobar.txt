@@ -1,0 +1,65 @@
+Aluno: Carlos Eduardo Pereira Soares
+RA: 010623075
+E-mail: Cadu.soares83@gmail.com
+
+Tabela: Produtos
+produto_id (PK)
+nome
+descricao
+marca
+modelo
+tamanho
+cor
+preco
+categoria_id (FK)
+imagem
+estoque
+
+
+
+Tabela: Categorias
+categoria_id (PK)
+nome
+descricao
+
+
+
+Tabela: Clientes
+cliente_id (PK)
+nome
+email
+senha
+telefone
+endereco
+cidade
+estado
+cep
+
+
+Tabela: Pedidos
+pedido_id (PK)
+cliente_id (FK)
+data_pedido
+status
+forma_pagamento
+valor_total
+
+
+Tabela: Itens_Pedido
+item_pedido_id (PK)
+pedido_id (FK)
+produto_id (FK)
+quantidade
+preco_unitarioTabela: Itens_Pedido
+item_pedido_id (PK)
+pedido_id (FK)
+produto_id (FK)
+quantidade
+preco_unitario
+
+
+Tabela: Fornecedores
+fornecedor_id (PK)
+nome
+contato
+email
